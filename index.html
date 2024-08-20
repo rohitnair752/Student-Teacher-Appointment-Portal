@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            font-family: "Poppins"'New Time Roman';
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 110px;
+            background-color: rgb(135, 64, 141);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(244, 232, 9);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 5;
+            background: rgb(135, 64, 141);
+            height: 6px;
+            margin: 40px 84px;
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgba(96, 17, 121, 0.948);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+       
+        .rightsection img {
+            width: 75%;
+
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 34%;
+        }
+
+        .purple {
+            color: rgb(135, 64, 141);
+            font-weight: bolder
+            ;
+        }
+
+        #element {
+            color: rgb(172, 127, 173);
+
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vw;
+        }
+
+        .secondsection h1 {
+
+            font-size: 2rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 175px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 96px;
+            width: 162px;
+            font-size: 25px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 101px;
+            color: gray;
+            width: 150px;
+            font-size: 20px;
+
+        }
+
+        footer {
+            background-color: rgb(135, 64, 141);
+            height: 200px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 73px 700px;
+        }
+
+        @media screen and(max-width: 1400px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+            .vertical-title,.vertical-desc{
+                left: 45px;
+            }
+            .secondsection .box{
+                width: 50vw;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .firstsection{
+                flex-direction: column-reverse;
+
+            }
+            .leftsection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .secondsection{
+                height: 141vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .rightsection{
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+            .rightsection img{
+                width: 45vh;
+                margin-bottom: 73px;
+            }
+            body{
+                min-width: fit-content;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class=left>Student - Teacher <br>
+            Appointment Portal </div>
+            <div class=right>
+                <ul>
+                    <li>Home</li>
+                    <li><a href="about.html">About Portal</a></li>
+                    <li><a href="form.html">Book Appointment</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <span class="purple">Book Your Appointment Now</span><br>
+                <span id="element"></span>
+             
+            </div>
+            <div class="rightsection">
+                <img src="img4.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">How to book an Appointment </span>
+            <h1>Study the steps below </h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        STEP 1
+                    </div>
+                    <div class="vertical-desc">
+                        Enter your full name and number and other information 
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                       STEP 2
+                    </div>
+                    <div class="vertical-desc">
+                        Describe your needs such as  your purpose of booking an Appointment
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                       STEP 3
+                    </div>
+                    <div class="vertical-desc">
+                        Confirm Date and Time according to your convenience and availabilty 
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        STEP 4
+                    </div>
+                    <div class="vertical-desc">
+                        After doing all the steps now you can finally schedule your Appointment by clicking on schedule button 
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h2>Student Teacher Appointment Portal ThankYou For Visiting.
+                </h2>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['A Perfect Platform for the interaction between Teacher and Students '],
+            typeSpeed: 30,
+        });
+    </script>
+<ul>
+    <li class="serif">serif</li>
+    <li class="sans-serif">sans-serif</li>
+    <li class="monospace">monospace</li>
+    <li class="cursive">cursive</li>
+    <li class="fantasy">fantasy</li>
+    <li class="system-ui">system-ui</li>
+  </ul>
+</body>
+
+</html>
